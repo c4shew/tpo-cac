@@ -1,7 +1,7 @@
-body {
-    background-image: url("/backgrsandias.jpeg";
+body { background-image: url("/backgrsandias.jpeg";
+         opacity: 0.5;
   }
 
-header {
-background-color: hotpink;
+.header { background-color: lightpink);
 }
+#button {background-color: hotpink; }
