@@ -1,21 +1,28 @@
-body { background-image: url("/backgrsandias.jpeg");
-opacity: 0.7;
+body { background-color: white;
   }
 
-.header { background-color: rgb(252, 192, 201);
+.header { background-color:pink;
 }
-.button {background-color: hotpink; 
-    border: none;
+.header::before {content: "";
+
+
+.button {background-color: pink; 
+    border: hotpink;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;}
+    font-size: 16px;
+    border-radius: 12px;
+    border-width: 5px;
+    }
 
-    h1 { text-align: center;
-        color: black;
-        font-size: 200%;
+.button:hover {background-color: hotpink;}
+
+h1 { text-align: center;
+        color: hotpink;
+        font-size: 400%;
         margin-top: 10%;
-        text-shadow: 2px 2px 2px white;
+        text-shadow: 2px 2px 2px pink;
     }
