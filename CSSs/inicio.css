@@ -1,12 +1,18 @@
-body { background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body { background-color: pink;
   }
 
-.header { background-color:pink;
+.header { background-color:white;
+    color: hotpink;
+    width: 100%;
 }
-.header::before {content: "";
+.header::before {content: "🍓";}
+
+.home  {text-align: end; }
 
 
-.button {background-color: pink; 
+.button { background-color: hotpink; 
     border: hotpink;
     color: white;
     padding: 15px 32px;
@@ -15,14 +21,18 @@ body { background-color: white;
     display: inline-block;
     font-size: 16px;
     border-radius: 12px;
-    border-width: 5px;
-    }
+    border-width: 5px; }
 
-.button:hover {background-color: hotpink;}
-
-h1 { text-align: center;
+.button:hover { transition-duration: 0.15s;
+    padding: 18px 37px;
+    font-size: 19px;
+}
+h1 { font-family: 'Bebas Neue';
+    text-align: center;
         color: hotpink;
-        font-size: 400%;
+        font-size: 500%;
         margin-top: 10%;
         text-shadow: 2px 2px 2px pink;
     }
+
+.explore { text-align: end;}
