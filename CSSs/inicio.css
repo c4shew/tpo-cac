@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-body { grid-area: main;
-    background-color: pink;
+.contenedor { display: grid;
+    grid-template: 50px 1fr 100px / 1fr;
+    grid-template-areas: "header" 
+                         "body" 
+                         "footer";
+  }
+body { background-color: pink;
+    margin: 0%;
+    grid-area: body;
   }
 
-.header { grid-area: header;
+.header { font-family: 'Bebas Neue';
     background-color:white;
     color: hotpink;
     width: 100%;
-    margin: none;
-    grid-column: 1;
-    grid-row: 1;
+    height: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    grid-area: header;
 }
 .header::before {content: "🍓";}
-
-
-.home  {text-align: end; }
 
 
 .button { background-color: hotpink; 
@@ -28,6 +33,12 @@ body { grid-area: main;
     font-size: 16px;
     border-radius: 18px;
     border-width: 5px; 
+    width: 150px;
+    height: 21px;
+    margin-left: 42%;
+    margin-right: 42%;
+    margin-top: 10%;
+    grid-area: body;
 }
 
 .button:hover { transition-duration: 0.15s;
@@ -39,8 +50,17 @@ h1 { font-family: 'Bebas Neue';
     text-align: center;
         color: hotpink;
         font-size: 500%;
-        margin-top: 10%;
         text-shadow: 2px 2px 2px pink;
+        margin: 30px;
+        margin-top: 10%;
     }
 
-.explore { text-align: end;}
+.explore { grid-area: footer;
+    font-family: 'Bebas Neue';
+    text-align: center;
+        color: white;
+    
+        
+    }
+
+
