@@ -19,6 +19,7 @@ body { background-color: pink;
     margin-top: 0%;
     margin-bottom: 0%;
     grid-area: header;
+    padding: auto;
 }
 .header::before {content: "🍓";}
 
