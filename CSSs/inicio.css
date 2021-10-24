@@ -6,7 +6,7 @@
                          "body" 
                          "footer";
   }
-body { background-color: pink;
+body { background-color: #EFD3B5;
     margin: 0%;
     grid-area: body;
   }

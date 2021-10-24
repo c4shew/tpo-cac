@@ -1,5 +1,50 @@
-.contenedor {d; }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.contenedor {display:grid;
+    grid-template:  100px 1fr 100px / 1fr;
+    grid-template-areas: "header"
+                         "body"
+                         "footer"; }
+
 
 
 .musify::before {content: "🍓";
+}
+
+.header { font-family: 'Bebas Neue';
+    background-color:white;
+    color: hotpink;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: header;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    border-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: pink;
+}
+
+body { background-color: white;
+    grid-area: body;
+    margin: 0%;
+}
+
+.title { color: hotpink;
+    margin: 25px;
+    font-family: 'Bebas Neue';
+}
+
+.btn { background-color: hotpink; 
+    border: hotpink;
+    color: white;
+    margin: 25px;
+}
+
+.btn:hover { background-color: #FF0D86; 
+    border: hotpink;
+    color: white;
+    margin: 25px;
 }
