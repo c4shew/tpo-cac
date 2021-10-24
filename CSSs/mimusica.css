@@ -19,11 +19,13 @@ body { background-color: pink;
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     grid-area: header;
-    margin: 0%;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 50px;
 }
-.header::before {content: "🍓";
+.musify::before {content: "🍓";
 }
  
 .intro { font-family: 'Bebas Neue';
@@ -65,4 +67,7 @@ body { background-color: pink;
 .footer  { grid-area: footer;
     color: hotpink;
     margin-left: 40px;
+}
+.button { color: hotpink;
+    border-style: none;
 }
