@@ -10,6 +10,8 @@
 
 .musify::before {content: "🍓";
 }
+.musify {margin: 18px;
+}
 
 .header { font-family: 'Bebas Neue';
     background-color:white;
@@ -21,7 +23,7 @@
     grid-area: header;
     padding-left: 10px;
     padding-right: 10px;
-    height: 50px;
+    height: 75px;
     border-bottom: 10px;
     border-bottom-style: solid;
     border-bottom-color: #EFD3B5;
@@ -52,4 +54,8 @@ body { background-color: white;
 .form-check-input:checked { background-color: hotpink;
     box-shadow: #EFD3B5;
     outline-color: #EFD3B5;
+}
+
+.inicio { color: hotpink;
+    margin: 25px;
 }
