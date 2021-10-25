@@ -44,10 +44,12 @@ body { background-color: white;
 }
 
 .btn:hover { background-color: hotpink; 
-    border: hotpink;
-    color: white;
-    margin: 25px;
 }
 
 .form { margin: 25px;
+}
+
+.form-check-input:checked { background-color: hotpink;
+    box-shadow: #EFD3B5;
+    outline-color: #EFD3B5;
 }
