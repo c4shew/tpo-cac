@@ -71,3 +71,8 @@ body { background-color: #EFD3B5;
 .button { color: hotpink;
     border-style: none;
 }
+
+@media screen (max-width: 600px){
+    
+}
+
