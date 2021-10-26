@@ -20,6 +20,7 @@ body { background-color: #EFD3B5;
     margin-bottom: 0%;
     grid-area: header;
     padding: auto;
+    position: static;
 }
 .header::before {content: "🍓";}
 

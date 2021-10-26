@@ -1,22 +1,23 @@
 
-var username = document.getElementById (username);
 
-if (username == null) {
-   alert ("El nombre de usuario debe contener al menos un carácter");
-   };
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("form").addEventListener('submit', validarFormulario); 
+  });
 
-var email = document.querySelector (email);
+  function validarFormulario(evento) {
+    evento.preventDefault();
+    var usuario = document.getElementById('username').value;
+    if(usuario.length == 0) {
+      alert('No ingresó su usuario');
+      return;
+    }
 
-let str = email;
-let arrmail = str.split('');
-
-arrmail.some (containsAtSign) ;
-
-function containsAtSign (element) { return element === @
-};
-
-if (containsAtSign == false){
-    alert ("Correo electrónico inválido");
-    };
-
-    
+    var clave1 = document.getElementById('pwd1').value;
+    var clave2 = document.getElementById('pwd2').value
+  if (clave1 !== clave2) {
+    alert('La clave no es válida');
+    return;
+  }
+  this.submit();
+  alert('Su usuario fue creado con éxito')
+}

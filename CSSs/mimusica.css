@@ -25,6 +25,7 @@ body { background-color: #EFD3B5;
     padding-left: 10px;
     padding-right: 10px;
     height: 75px;
+    position: static;
 }
 .musify::before {content: "🍓";
 }
@@ -81,7 +82,7 @@ body { background-color: #EFD3B5;
 /*.inicio:hover { ;
 } */
 
-@media screen and (max-width: 850px) { .pop {display:grid;
+@media screen and (max-width: 1024px) { .pop {display:grid;
     grid-template:  1fr 1fr / 1fr 1fr;
     margin: 25px;}
 }
@@ -89,7 +90,9 @@ body { background-color: #EFD3B5;
 
 @media screen and (max-width: 600px) { .pop {display:flex;
     flex-direction: column;  
-    margin: 25px;}
-}
+    margin: 25px;
+    align-content: center;
+}}
+
     
 
